@@ -1,15 +1,21 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+ <div>
+    <img alt="Vue logo" src="./assets/logo.png">
+    <title-component text='Mi Banco dinamico 2.0'/>
+    <cuenta-component />
+ </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import CuentaComponent from './components/CuentaComponent.vue'
+import TitleComponent from './components/TitleComponent.vue'
+
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    TitleComponent,
+    CuentaComponent,
   }
 }
 </script>
